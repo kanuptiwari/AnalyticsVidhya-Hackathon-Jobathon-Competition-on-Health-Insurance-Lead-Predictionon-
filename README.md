@@ -28,6 +28,34 @@ Response (Target)	0 : Customer did not show interest in the recommended policy,
 1 : Customer showed interest in the recommended policy
 
 
+
+
+
+4.	MODEL CREATION AND PREDICTION
+
+As it is mentioned herein before, CatBoost is used for classifier. CatBoost is a recently open-sourced machine learning algorithm. CatBoost” name comes from two words “Category” and “Boosting. As discussed, the library works well with multiple Categories of data, such as audio, text, image including historical data. “Boost” comes from gradient boosting machine learning algorithm as this library is based on gradient boosting library.  
+
+Like most of the other Machine Learning classifiers before using this classifier some parameters has to be arranged. In this project different parameter combinations has been tried and the best result is obtained by the parameters shown on the figure below.
+
+![image](https://user-images.githubusercontent.com/60667441/114436966-f6ea9a80-9b93-11eb-8e93-d3a8b0956dc6.png)
+
+ 
+Figure 35 CatBoost Algorithm Parameters
+To evaluate the performance of the classifier train data was split into two dataframes as training datarframe and testing dataframe. For the training dataframe 70 percent of the whole data was used and for testing dataframe the rest 30 percent of the whole data was used. The Feature Importance Rating, Truth Table and Confusion Matrix is shown on the figures below.
+ 
+Figure 36 Feature Importance Rating
+ 
+Figure 37 Truth Table
+ 
+Figure 38 Confusion Matrix
+After completion of evaluation of the training model, predictions were made in accordance with “test.csv” data file. Each of the record on this data file was given to the classifier for prediction of the “Lead” or “Response” value. The predicted “Response” values are written on “submission.csv” file on required format.
+
+
+
+
+
+
+
 Test Data
 Variable	Definition
 ID	Unique Identifier for a row
