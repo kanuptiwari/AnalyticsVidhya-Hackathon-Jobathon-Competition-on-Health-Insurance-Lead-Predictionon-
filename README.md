@@ -42,12 +42,21 @@ Like most of the other Machine Learning classifiers before using this classifier
  
 Figure 35 CatBoost Algorithm Parameters
 To evaluate the performance of the classifier train data was split into two dataframes as training datarframe and testing dataframe. For the training dataframe 70 percent of the whole data was used and for testing dataframe the rest 30 percent of the whole data was used. The Feature Importance Rating, Truth Table and Confusion Matrix is shown on the figures below.
+
+![image](https://user-images.githubusercontent.com/60667441/114437069-141f6900-9b94-11eb-8a57-b6a0fb544f85.png)
+
  
 Figure 36 Feature Importance Rating
+ 
+ ![image](https://user-images.githubusercontent.com/60667441/114437096-1d103a80-9b94-11eb-818a-62f284a2b9b7.png)
+
  
 Figure 37 Truth Table
  
 Figure 38 Confusion Matrix
+
+![image](https://user-images.githubusercontent.com/60667441/114437144-2699a280-9b94-11eb-911a-507f0e5dc9c9.png)
+
 After completion of evaluation of the training model, predictions were made in accordance with “test.csv” data file. Each of the record on this data file was given to the classifier for prediction of the “Lead” or “Response” value. The predicted “Response” values are written on “submission.csv” file on required format.
 
 
